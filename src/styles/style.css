@@ -1,10 +1,18 @@
 @font-face {
-    font-family: 'OpenSans-Regular';
+    font-family: 'OpenSans';
+    font-weight: 400;
     src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Neucha-Regular';
+    font-family: 'OpenSans';
+    font-weight: 700;
+    src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Neucha';
+    font-weight: 400;
     src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
@@ -20,19 +28,47 @@
     --color-blue: #1085c5;
 }
 
-body {
-    font: 16px/1.6em 'OpenSans-Regular';
+.m-0 {
+    margin: 0;
+}
+
+.mt-185 {
+    margin-top: 185px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.text-basic {
+    color: var(--color-basic);
+}
+
+.text-dark {
     color: var(--color-dark);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+.bg-light {
+    background-color: var(--color-light);
+}
+
+body {
+    font: 16px/1.6em 'OpenSans';
+    overflow: hidden;
 }
 
 h1,
 h2,
 h3 {
-    line-height: 1.2em;
-}
-
-h1 {
-    font-size: 72px;
+    font: 72px/1.2em 'Neucha';
 }
 
 h2 {
@@ -43,9 +79,64 @@ h3 {
     font-size: 34px;
 }
 
-main {
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+}
+
+.btn-basic {
+    background-color: var(--color-basic);
+    color: var(--color-white);
+}
+
+.header-btn {
+    position: relative;
+    top: 40px;
+    left: 570px;
+}
+
+.container {
+    position: relative;
+    
     width: 1110px;
+    margin: 0 auto;
     padding: 100px 0;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.bg-image {
+    position: relative;
+
+    z-index: -3;
+}
+
+.bg-image::before {
+    position: absolute;
+    content: "";
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../assets/images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 0.1;
+    z-index: -2;
+}
+
+.header-img {
+    position: absolute;
+
+    height: 525px;
+    top: 55px;
+    right: -270px;
+
+    z-index: -1;
+}
+
+.header-item {
+    flex: 1 1 0;
 }
