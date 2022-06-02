@@ -21,6 +21,7 @@
     --color-translucent-white: #d7ccc0;
     --color-light: #f5f4f0;
     --color-basic: #fe8a02;
+    --color-basic-hover: #EA7600; 
     --color-basic-dark: #42413c;
     --color-dark: #2a2626;
     --color-transluent-dark: #908d8b;
@@ -133,6 +134,8 @@ h2,
 h3 {
     margin: 0;
     font: 72px/1.2em 'Neucha';
+
+    color: var(--color-basic);
 }
 
 h2 {
@@ -150,13 +153,17 @@ h4 {
 .btn {
     display: inline-block;
     box-sizing: border-box;
-
-    text-decoration: none;
 }
 
 .btn-basic {
     background-color: var(--color-basic);
     color: var(--color-white);
+
+    text-decoration: none;
+}
+
+.btn-basic:hover {
+    background-color: var(--color-basic-hover);
 }
 
 .container {
@@ -165,6 +172,8 @@ h4 {
     width: 1110px;
     margin: 0 auto;
     padding: 100px 0;
+
+    z-index: 1;
 }
 
 .header-btn {
@@ -177,7 +186,6 @@ h4 {
 
 .bg-image {
     position: relative;
-    z-index: -3;
 }
 
 .bg-image::before {
@@ -194,7 +202,6 @@ h4 {
     background-size: cover;
 
     opacity: 0.1;
-    z-index: -2;
 }
 
 .header-img {
@@ -219,6 +226,7 @@ h4 {
     margin: auto;
 }
 
+/* navigation section */
 .title-nav {
     width: 350px;
 
@@ -232,22 +240,32 @@ h4 {
     box-sizing: border-box;
 }
 
-.card-nav {
+.card-basic {
     text-decoration: none;
+    
     background-color: var(--color-white);
     color: var(--color-dark);
 }
 
-.index-card {
+.card .index-card {
+    margin: 0 0 40px 0;
+
     font: 64px/1 'Neucha';
-    margin: 0;
-    margin-bottom: 40px;
 }
 
-.title-card {
-    color: var(--color-basic);
+.card .description-card {
+    margin: 16px 0 0 0;
 }
 
+.card:hover {
+    background-color: var(--color-basic);
+}
+
+.card:hover * {
+    color: var(--color-white);
+}
+
+/* main section */
 .content-text {
     flex: 1 1 0;
 }
