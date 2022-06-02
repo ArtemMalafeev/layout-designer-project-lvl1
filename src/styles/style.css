@@ -36,8 +36,16 @@
     margin-top: 185px;
 }
 
-.mt-469 {
-    margin-top: 369px;
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-469 {
+    margin-bottom: 369px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .mr-30 {
@@ -48,8 +56,20 @@
     margin-top: 30px;
 }
 
+.pt-100 {
+    padding-top: 100px;
+}
+
 .d-flex {
     display: flex;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-space-between {
+    justify-content: space-between;
 }
 
 .text-center {
@@ -68,6 +88,18 @@
     color: var(--color-white);
 }
 
+.text-brown {
+    color: var(--color-brown);
+}
+
+.text-transluent-dark {
+    color: var(--color-transluent-dark);
+}
+
+.text-translucent-white {
+    color: var(--color-translucent-white);
+}
+
 .bg-light {
     background-color: var(--color-light);
 }
@@ -80,7 +112,15 @@
     background-color: var(--color-dark);
 }
 
-.video-shadow {
+.bg-brown  {
+    background-color: var(--color-brown);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.shadow {
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
@@ -103,13 +143,15 @@ h3 {
     font-size: 34px;
 }
 
+h4 {
+    font-size: 14px;
+}
+
 .btn {
     display: inline-block;
     box-sizing: border-box;
-    padding: 12px 24px;
 
     text-decoration: none;
-    font-weight: bold;
 }
 
 .btn-basic {
@@ -117,23 +159,24 @@ h3 {
     color: var(--color-white);
 }
 
-.header-btn {
-    margin-top: 22px;
-    margin-left: 570px;
-}
-
 .container {
     position: relative;
-    box-sizing: border-box;
     
     width: 1110px;
     margin: 0 auto;
     padding: 100px 0;
 }
 
+.header-btn {
+    padding: 12px 24px;
+    margin-top: 22px;
+    margin-left: 570px;
+
+    font-weight: bold;
+}
+
 .bg-image {
     position: relative;
-
     z-index: -3;
 }
 
@@ -174,4 +217,52 @@ h3 {
     right: 0;
 
     margin: auto;
+}
+
+.title-nav {
+    width: 350px;
+
+    font: 52px/1.2em 'Neucha';
+}
+
+.card {
+    padding: 24px;
+    width: 350px;
+
+    box-sizing: border-box;
+}
+
+.card-nav {
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.index-card {
+    font: 64px/1 'Neucha';
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.title-card {
+    color: var(--color-basic);
+}
+
+.content-text {
+    flex: 1 1 0;
+}
+
+.content-title {
+    margin: 100px 0 20px 0;
+    padding: 5px 10px;
+}
+
+.description-subtitle {
+    margin: 0;
+
+    font: 24px/1.2em 'Neucha'
+}
+
+.description-text {
+    font: 34px/1.2em 'Neucha';
 }
