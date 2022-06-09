@@ -307,7 +307,8 @@ h4 {
 /* main section */
 .content-text {
     flex: 1 1 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .content-title {
