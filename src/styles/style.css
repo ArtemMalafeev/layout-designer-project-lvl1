@@ -282,7 +282,7 @@ h4 {
 .card-basic {
     text-decoration: none;
     
-    background-color: var(--color-white);
+    background-color: var(--color-light);
     color: var(--color-dark);
 }
 
