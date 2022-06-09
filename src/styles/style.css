@@ -351,6 +351,11 @@ h4 {
     margin: 0;
     padding: 0;
     border: none;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-basic-hover);
 }
 
 .btn-orange {
@@ -374,6 +379,8 @@ h4 {
     margin: auto;
     width: 20px;
     height: 20px;
+
+    z-index: 99;
 }
 
 .contact-input::placeholder {
