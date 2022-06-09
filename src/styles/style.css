@@ -1,3 +1,4 @@
+/* fonts */
 @font-face {
     font-family: 'OpenSans';
     font-weight: 400;
@@ -16,6 +17,7 @@
     src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
+/* common styles */
 :root {
     --color-white: #fff;
     --color-translucent-white: #d7ccc0;
@@ -31,6 +33,18 @@
 
 .m-0 {
     margin: 0;
+}
+
+.mb-9 {
+    margin-bottom: 9px;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-60 {
+    margin-top: 60px;
 }
 
 .mt-185 {
@@ -61,6 +75,14 @@
     padding-top: 100px;
 }
 
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-38 {
+    padding-top: 38px;
+}
+
 .d-flex {
     display: flex;
 }
@@ -71,6 +93,18 @@
 
 .f-space-between {
     justify-content: space-between;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+.fz-14 {
+    font-size: 14px;
 }
 
 .text-center {
@@ -115,6 +149,10 @@
 
 .bg-brown  {
     background-color: var(--color-brown);
+}
+
+.bg-basic-dark {
+    background-color: var(--color-basic-dark);
 }
 
 .uppercase {
@@ -176,14 +214,6 @@ h4 {
     z-index: 1;
 }
 
-.header-btn {
-    padding: 12px 24px;
-    margin-top: 22px;
-    margin-left: 570px;
-
-    font-weight: bold;
-}
-
 .bg-image {
     position: relative;
 }
@@ -202,6 +232,15 @@ h4 {
     background-size: cover;
 
     opacity: 0.1;
+}
+
+/* header section */
+.header-btn {
+    padding: 12px 24px;
+    margin-top: 22px;
+    margin-left: 570px;
+
+    font-weight: bold;
 }
 
 .header-img {
@@ -283,4 +322,60 @@ h4 {
 
 .description-text {
     font: 34px/1.2em 'Neucha';
+}
+
+/* footer section */
+.contact {
+    height: 190px;
+    padding: 0 55px;
+
+    align-items: center;
+}
+
+.contact-content {
+    width: 423px;
+}
+
+.contact-input {
+    box-sizing: border-box;
+
+    height: 50px;
+    width: 100%;
+
+    padding: 15px;
+    border: none;
+}
+
+.contact-btn {
+    width: 70px;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.btn-orange {
+    background: var(--color-basic);
+}
+
+.btn-image {
+    position: relative;
+}
+
+.btn-image::before  {
+    position: absolute;
+    content: '';
+    background-image: url('../assets/images/send.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-input::placeholder {
+    opacity: 0.2;
 }
