@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ArtemMalafeev/layout-designer-project-lvl1#readme",
   "devDependencies": {
     "htmlhint": "^1.1.4",
-    "stylelint-config-standard": "^25.0.0"
+    "stylelint-config-standard": "^25.0.0",
+    "surge": "^0.23.1"
   }
 }
