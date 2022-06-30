@@ -1,35 +1,35 @@
 /* fonts */
 @font-face {
-  font-family: "OpenSans";
+  font-family: OpenSans;
   src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: OpenSans;
   src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
-  font-family: "Neucha";
+  font-family: Neucha;
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
 /* common styles */
 :root {
-  --color-white: #fff;
-  --color-translucent-white: #d7ccc0;
-  --color-light: #f5f4f0;
-  --color-basic: #fe8a02;
-  --color-basic-hover: #ea7600; 
-  --color-basic-dark: #42413c;
-  --color-dark: #2a2626;
-  --color-transluent-dark: #908d8b;
-  --color-brown: #b09a81;
-  --color-blue: #1085c5;
+  --color-white:#fff;
+  --color-translucent-white:#d7ccc0;
+  --color-light:#f5f4f0;
+  --color-basic:#fe8a02;
+  --color-basic-hover:#ea7600; 
+  --color-basic-dark:#42413c;
+  --color-dark:#2a2626;
+  --color-transluent-dark:#908d8b;
+  --color-brown:#b09a81;
+  --color-blue:#1085c5;
 }
 
 .m-0 {
-   margin: 0;
+  margin: 0;
 }
 
 .mb-9 {
@@ -37,7 +37,7 @@
 }
 
 .mt-0 {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .mt-60 {
@@ -81,7 +81,7 @@
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .f-wrap {
@@ -129,7 +129,7 @@
 }
 
 .text-translucent-white {
-    color: var(--color-translucent-white);
+  color: var(--color-translucent-white);
 }
 
 .bg-light {
@@ -141,10 +141,10 @@
 }
 
 .bg-dark {
-    background-color: var(--color-dark);
+  background-color: var(--color-dark);
 }
 
-.bg-brown  {
+.bg-brown {
   background-color: var(--color-brown);
 }
 
@@ -157,24 +157,24 @@
 }
 
 .shadow {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
 }
 
 body {
-  font: 16px/1.6em "OpenSans";
+  font: 16px/1.6em OpenSans;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  font: 72px/1.2em "Neucha";
+  font: 72px/1.2em Neucha;
 
   color: var(--color-basic);
 }
 
 h2 {
-   font-size: 60px;
+  font-size: 60px;
 }
 
 h3 {
@@ -182,7 +182,7 @@ h3 {
 }
 
 h4 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .btn {
@@ -193,7 +193,6 @@ h4 {
 .btn-basic {
   background-color: var(--color-basic);
   color: var(--color-white);
-
   text-decoration: none;
 }
 
