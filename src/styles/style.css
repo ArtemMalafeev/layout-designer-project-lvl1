@@ -16,16 +16,16 @@
 
 /* common styles */
 :root {
-  --color-white:#fff;
-  --color-translucent-white:#d7ccc0;
-  --color-light:#f5f4f0;
-  --color-basic:#fe8a02;
-  --color-basic-hover:#ea7600; 
-  --color-basic-dark:#42413c;
-  --color-dark:#2a2626;
-  --color-transluent-dark:#908d8b;
-  --color-brown:#b09a81;
-  --color-blue:#1085c5;
+  --color-white: #fff;
+  --color-translucent-white: #d7ccc0;
+  --color-light: #f5f4f0;
+  --color-basic: #fe8a02;
+  --color-basic-hover: #ea7600;
+  --color-basic-dark: #42413c;
+  --color-dark: #2a2626;
+  --color-transluent-dark: #908d8b;
+  --color-brown: #b09a81;
+  --color-blue: #1085c5;
 }
 
 .m-0 {
@@ -157,18 +157,18 @@
 }
 
 .shadow {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 15%));
+  filter: drop-shadow(0, 16px, 32px, rgba(0, 0, 0, 15%));
 }
 
 body {
-  font: 16px/1.6em OpenSans;
+  font: 16px/1.6em OpenSans, sans-serif;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  font: 72px/1.2em Neucha;
+  font: 72px/1.2em Neucha, sans-serif;
 
   color: var(--color-basic);
 }
@@ -202,7 +202,7 @@ h4 {
 
 .container {
   position: relative;
-    
+
   width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
@@ -265,7 +265,7 @@ h4 {
 .title-nav {
   width: 350px;
 
-  font: 52px/1.2em "Neucha";
+  font: 52px/1.2em Neucha, sans-serif;
 }
 
 .card {
@@ -277,19 +277,19 @@ h4 {
 
 .card-basic {
   text-decoration: none;
-    
+  
   background-color: var(--color-light);
   color: var(--color-dark);
 }
 
 .card .index-card {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 
-  font: 64px/1 "Neucha";
+  font: 64px/1 Neucha, sans-serif;
 }
 
 .card .description-card {
-  margin: 16px 0 0 0;
+  margin: 16px 0 0;
 }
 
 .card:hover {
@@ -308,18 +308,18 @@ h4 {
 }
 
 .content-title {
-  margin: 100px 0 20px 0;
+  margin: 100px 0 20px;
   padding-left: 10px;
 }
 
 .description-subtitle {
   margin: 0;
 
-  font: 24px/1.2em "Neucha"
+  font: 24px/1.2em Neucha, sans-serif;
 }
 
 .description-text {
-  font: 34px/1.2em "Neucha";
+  font: 34px/1.2em Neucha, sans-serif;
 }
 
 /* footer section */
@@ -364,16 +364,16 @@ h4 {
   position: relative;
 }
 
-.btn-image::before  {
+.btn-image::before {
   position: absolute;
   content: "";
   background-image: url("../assets/images/send.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin: auto;
   width: 20px;
   height: 20px;
